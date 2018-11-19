@@ -2,7 +2,7 @@ package selection;
 
 import java.util.Random;
 
-public class selection {//reaproveitando o método como uma função
+public class selection {//reaproveitando o mÃ©todo como uma funÃ§Ã£o
     public static int[] doSelectionSort(int[] arr){
         
         for (int i = 0; i < arr.length - 1; i++)
@@ -21,7 +21,7 @@ public class selection {//reaproveitando o método como uma função
      
     public static void main(String a[]){
          
-    	Random r = new Random();//util para chamar os números aletórios
+    	Random r = new Random();//util para chamar os nÃºmeros aletÃ³rios
     	
         int[] vet5 = new int[5];
         int[] vet10 = new int[10];
@@ -30,38 +30,38 @@ public class selection {//reaproveitando o método como uma função
         int[] vet1000 = new int[1000];
         int[] vet10000 = new int[10000];
         
-        //vet5 não ordenados
-        System.out.println("Vetores não ordenados: ");
+        //vet5 nÃ£o ordenados
+        System.out.println("Vetores nÃ£o ordenados: ");
         for (int i = 0; i < vet5.length; i++) {
         	vet5[i] = r.nextInt(5);
 		}
         
-        //vet10 não ordenados
-        System.out.println("Vetores não ordenados: ");
+        //vet10 nÃ£o ordenados
+        System.out.println("Vetores nÃ£o ordenados: ");
         for (int i = 0; i < vet10.length; i++) {
         	vet10[i] = r.nextInt(10);
 		}
         
-        //vet50 não ordenados
-        System.out.println("Vetores não ordenados: ");
+        //vet50 nÃ£o ordenados
+        System.out.println("Vetores nÃ£o ordenados: ");
         for (int i = 0; i < vet50.length; i++) {
         	vet50[i] = r.nextInt(50);
 		}
         
-        //vet100 não ordenados
-        System.out.println("Vetores não ordenados: ");
+        //vet100 nÃ£o ordenados
+        System.out.println("Vetores nÃ£o ordenados: ");
         for (int i = 0; i < vet100.length; i++) {
         	vet100[i] = r.nextInt(100);
 		}
         
-        //vet1000 não ordenados
-        System.out.println("Vetores não ordenados: ");
+        //vet1000 nÃ£o ordenados
+        System.out.println("Vetores nÃ£o ordenados: ");
         for (int i = 0; i < vet1000.length; i++) {
         	vet1000[i] = r.nextInt(1000);
 		}
         
-        //vet10000 não ordenados
-        System.out.println("Vetores não ordenados: ");
+        //vet10000 nÃ£o ordenados
+        System.out.println("Vetores nÃ£o ordenados: ");
         for (int i = 0; i < vet10000.length; i++) {
         	vet10000[i] = r.nextInt(10000);
 		}
@@ -77,7 +77,7 @@ public class selection {//reaproveitando o método como uma função
             System.out.print(", ");
             cont5++;
         }
-        System.out.println("\nTotal de comparações com 5: "+cont5);
+        System.out.println("\nTotal de comparaÃ§Ãµes com 5: "+cont5);
         
         //vet10 ordenados
         int[] arr3 = doSelectionSort(vet10);
@@ -88,7 +88,7 @@ public class selection {//reaproveitando o método como uma função
             System.out.print(", ");
             cont10++;
         }
-        System.out.println("\nTotal de comparações com 10: "+cont10);
+        System.out.println("\nTotal de comparaÃ§Ãµes com 10: "+cont10);
         
         //vet50 ordenados
         int[] arr4 = doSelectionSort(vet50);
@@ -99,7 +99,7 @@ public class selection {//reaproveitando o método como uma função
             System.out.print(", ");
             cont50++;
         }
-        System.out.println("\nTotal de comparações com 50: "+cont50);
+        System.out.println("\nTotal de comparaÃ§Ãµes com 50: "+cont50);
         
         //vet100 ordenados
         int[] arr5 = doSelectionSort(vet100);
@@ -110,7 +110,7 @@ public class selection {//reaproveitando o método como uma função
             System.out.print(", ");
             cont100++;
         }
-        System.out.println("\nTotal de comparações com 100: "+cont100);
+        System.out.println("\nTotal de comparaÃ§Ãµes com 100: "+cont100);
         
         //vet1000 ordenados
         int[] arr6 = doSelectionSort(vet1000);
@@ -121,7 +121,7 @@ public class selection {//reaproveitando o método como uma função
             System.out.print(", ");
             cont1000++;
         }
-        System.out.println("\nTotal de comparações com 1000: "+cont1000);
+        System.out.println("\nTotal de comparaÃ§Ãµes com 1000: "+cont1000);
         
         //vet10000 ordenados
         int[] arr7 = doSelectionSort(vet10000);
@@ -132,6 +132,10 @@ public class selection {//reaproveitando o método como uma função
             System.out.print(", ");
             cont10000++;
         }
-        System.out.println("\nTotal de comparações com 10000: "+cont10000);
+        System.out.println("\nTotal de comparaÃ§Ãµes com 10000: "+cont10000);
+        
+        double mediaTotal = ((cont5 + cont10 + cont50 + cont100 + cont1000 + cont10000)/6);
+	    System.out.println("NÃºmero mÃ©dio de comparaÃ§Ãµes entre 5, 10, 50, 100, 1000 e 1000: \n"
+	    		+ ""+mediaTotal);
     }
 }

@@ -189,7 +189,7 @@ public class bubble {
 	    }
 	    System.out.println("\nQuantidade de comparações com 10000: "+cont10000);
 	    
-	    int mediaTotal = ((cont5 + cont10 + cont50 + cont100 + cont1000 + cont10000)/6);
+	    double mediaTotal = ((cont5 + cont10 + cont50 + cont100 + cont1000 + cont10000)/6);
 	    System.out.println("Número médio de comparações entre 5, 10, 50, 100, 1000 e 1000: \n"
 	    		+ ""+mediaTotal);
 	}
